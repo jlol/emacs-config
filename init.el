@@ -15,7 +15,7 @@
  '(custom-enabled-themes (quote (tsdh-dark)))
  '(package-selected-packages
    (quote
-    (gdscript-mode markdown-mode org org-ac org-agenda-property org-autolist org-kanban org-wc yasnippet mark-multiple))))
+    (counsel swiper use-package gdscript-mode markdown-mode org org-ac org-agenda-property org-autolist org-kanban org-wc yasnippet mark-multiple))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -31,11 +31,23 @@
 ;; Enable transient mark mode
 (transient-mark-mode 1)
 
+;; use-package to handle package installing
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+(require 'use-package)
+(setq use-package-always-ensure t)
+
+
+;; ORG -------------------------------------------------------------------
 ;;;;Org mode configuration
 ;; Enable Org mode
 (require 'org)
 ;; Make Org mode work with files ending in .org
 ;; (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 ;; The above is the default in recent emacsen
-(require 'ido)
-(ido-mode t)
+
+;; add your modules path
+(add-to-list 'load-path "~/.emacs.d/custom/")
+
+(require 'ivy-config)
