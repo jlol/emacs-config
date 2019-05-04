@@ -38,3 +38,35 @@
                                           newline
                                           newline-mark))
                             (whitespace-mode 1)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Package: volatile-highlights          ;;
+;;                                       ;;
+;; GROUP: Editing -> Volatile Highlights ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(use-package volatile-highlights)
+(volatile-highlights-mode t)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;,
+;; Duplicate-thing
+(use-package duplicate-thing)
+(global-set-key (kbd "M-c") 'duplicate-thing)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Package: undo-tree                  ;;
+;;                                     ;;
+;; GROUP: Editing -> Undo -> Undo Tree ;;
+;; From now on, your undo (C-/) behaves 
+;; just like normal editor. To redo, C-_. 
+;; To open the undo tree, C-x u. 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(use-package undo-tree)
+(global-undo-tree-mode)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Package: yasnippet                 ;;
+;;                                    ;;
+;; GROUP: Editing -> Yasnippet        ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(use-package yasnippet)
+(yas-global-mode 1)
