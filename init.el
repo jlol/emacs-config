@@ -15,7 +15,7 @@
  '(custom-enabled-themes (quote (tsdh-dark)))
  '(package-selected-packages
    (quote
-    (counsel swiper use-package gdscript-mode markdown-mode org org-ac org-agenda-property org-autolist org-kanban org-wc yasnippet mark-multiple))))
+    (expand-region company magit diff-hl counsel swiper use-package gdscript-mode markdown-mode org org-ac org-agenda-property org-autolist org-kanban org-wc yasnippet mark-multiple))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -51,3 +51,6 @@
 (add-to-list 'load-path "~/.emacs.d/custom/")
 
 (require 'ivy-config)
+(require 'setup-editing)
+(require 'setup-programming)
+(require 'setup-convenience)
