@@ -39,6 +39,21 @@
                                           newline-mark))
                             (whitespace-mode 1)))
 
+;; Backtab
+(global-set-key (kbd "<backtab>") 'un-indent-by-removing-4-spaces)
+(defun un-indent-by-removing-4-spaces ()
+  "remove 4 spaces from beginning of of line"
+  (interactive)
+  (save-excursion
+    (save-match-data
+      (beginning-of-line)
+      ;; get rid of tabs at beginning of line
+      (when (looking-at "^\\s-+")
+        (untabify (match-beginning 0) (match-end 0)))
+      (when (looking-at "^    ")
+        (replace-match "")))))
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Package: volatile-highlights          ;;
 ;;                                       ;;
@@ -70,3 +85,35 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (use-package yasnippet)
 (yas-global-mode 1)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; EVIL
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(use-package evil)
+(evil-mode 1)
+
+;; EVIL NERD COMMENTER
+(use-package evil-nerd-commenter)
+;; Emacs key bindings
+(global-set-key (kbd "M-;") 'evilnc-comment-or-uncomment-lines)
+(global-set-key (kbd "C-c l") 'evilnc-quick-comment-or-uncomment-to-the-line)
+(global-set-key (kbd "C-c c") 'evilnc-copy-and-comment-lines)
+(global-set-key (kbd "C-c p") 'evilnc-comment-or-uncomment-paragraphs)
+
+;; Vim key bindings
+(use-package evil-leader)
+(global-evil-leader-mode)
+(evil-leader/set-key
+  "ci" 'evilnc-comment-or-uncomment-lines
+  "cl" 'evilnc-quick-comment-or-uncomment-to-the-line
+  "ll" 'evilnc-quick-comment-or-uncomment-to-the-line
+  "cc" 'evilnc-copy-and-comment-lines
+  "cp" 'evilnc-comment-or-uncomment-paragraphs
+  "cr" 'comment-or-uncomment-region
+  "cv" 'evilnc-toggle-invert-comment-line-by-line
+  "."  'evilnc-copy-and-comment-operator
+  "\\" 'evilnc-comment-operator ; if you prefer backslash key
+)
+
+;; EVIL ORG
+(use-package org-evil)
