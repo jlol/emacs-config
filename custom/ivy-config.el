@@ -4,6 +4,20 @@
 (use-package ivy)
 (use-package swiper)
 (use-package counsel)
+;; Fuzzy search
+(use-package flx)
+(use-package flx-isearch)
+(use-package swiper)
+(setq ivy-re-builders-alist
+     '((t      . ivy--regex-ignore-order)
+       (swiper . ivy--regex-plus)
+       (t      . ivy--regex-fuzzy)
+       ))
+;(setq ivy-re-builders-alist
+;      '((swiper . regexp-quote)
+;        (t      . ivy--regex-fuzzy)))
+
+
 
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)

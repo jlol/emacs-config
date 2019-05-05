@@ -13,12 +13,16 @@
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(custom-enabled-themes (quote (tsdh-dark)))
+ '(helm-ag-base-command "ag --nocolor --nogroup --ignore-case")
+ '(helm-ag-command-option "--all-text")
+ '(helm-ag-ignore-buffer-patterns (quote ("\\.txt\\'" "\\.mkd\\'")))
+ '(helm-ag-insert-at-point (quote symbol))
  '(org-modules
    (quote
     (org-bbdb org-bibtex org-docview org-gnus org-info org-irc org-mhe org-rmail org-w3m org-drill)))
  '(package-selected-packages
    (quote
-    (cargo flycheck-rust rust-auto-use rust-mode aggressive-indent drag-stuff multiple-cursors ace-jump-mode treemacs-magit treemacs-icons-dired treemacs-projectile treemacs-evil treemacs neotree org-evil evil-leader evil-nerd-commenter evil dashboard auto-org-md projectile ibuffer-vc expand-region company magit diff-hl counsel swiper use-package gdscript-mode markdown-mode org org-ac org-agenda-property org-autolist org-kanban org-wc yasnippet mark-multiple))))
+    (company-flx flx-isearch flx git-timemachine helm-ag org-bullets cargo flycheck-rust rust-auto-use rust-mode aggressive-indent drag-stuff multiple-cursors ace-jump-mode treemacs-magit treemacs-icons-dired treemacs-projectile treemacs-evil treemacs neotree org-evil evil-leader evil-nerd-commenter evil dashboard auto-org-md projectile ibuffer-vc expand-region company magit diff-hl counsel swiper use-package gdscript-mode markdown-mode org org-ac org-agenda-property org-autolist org-kanban org-wc yasnippet mark-multiple))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -53,3 +57,6 @@
 (require 'setup-interface)
 (require 'setup-navigation)
 (require 'setup-rust)
+(require 'setup-org)
+(require 'setup-misc)
+(require 'setup-lsp)

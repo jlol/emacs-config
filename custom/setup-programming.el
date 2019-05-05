@@ -92,6 +92,10 @@
 (global-set-key (kbd "C-x g r") 'magit-reflog)
 (global-set-key (kbd "C-x g t") 'magit-tag)
 
+;;;;;;;;;;;;;;;;;
+;; GIT TIMEMACHINE
+(use-package git-timemachine)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; PACKAGE: flycheck                       ;;
 ;;                                         ;;
