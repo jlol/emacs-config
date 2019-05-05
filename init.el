@@ -18,7 +18,7 @@
     (org-bbdb org-bibtex org-docview org-gnus org-info org-irc org-mhe org-rmail org-w3m org-drill)))
  '(package-selected-packages
    (quote
-    (neotree org-evil evil-leader evil-nerd-commenter evil dashboard auto-org-md projectile ibuffer-vc expand-region company magit diff-hl counsel swiper use-package gdscript-mode markdown-mode org org-ac org-agenda-property org-autolist org-kanban org-wc yasnippet mark-multiple))))
+    (multiple-cursors ace-jump-mode treemacs-magit treemacs-icons-dired treemacs-projectile treemacs-evil treemacs neotree org-evil evil-leader evil-nerd-commenter evil dashboard auto-org-md projectile ibuffer-vc expand-region company magit diff-hl counsel swiper use-package gdscript-mode markdown-mode org org-ac org-agenda-property org-autolist org-kanban org-wc yasnippet mark-multiple))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
