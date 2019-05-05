@@ -46,14 +46,6 @@
 ;; easier window navigation
 (windmove-default-keybindings)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; PACKAGE: company              ;;
-;;                               ;;
-;; GROUP: Convenience -> Company ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(use-package company)
-(add-hook 'after-init-hook 'global-company-mode)
-(use-package company-flx)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Package: expand-region                       ;;
 ;;                                              ;;

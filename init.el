@@ -52,6 +52,7 @@
 
 (require 'ivy-config)
 (require 'setup-editing)
+(require 'setup-completion)
 (require 'setup-programming)
 (require 'setup-convenience)
 (require 'setup-interface)
@@ -60,3 +61,4 @@
 (require 'setup-org)
 (require 'setup-misc)
 (require 'setup-lsp)
+(require 'setup-helper)
