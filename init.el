@@ -18,7 +18,7 @@
     (org-bbdb org-bibtex org-docview org-gnus org-info org-irc org-mhe org-rmail org-w3m org-drill)))
  '(package-selected-packages
    (quote
-    (aggressive-indent drag-stuff multiple-cursors ace-jump-mode treemacs-magit treemacs-icons-dired treemacs-projectile treemacs-evil treemacs neotree org-evil evil-leader evil-nerd-commenter evil dashboard auto-org-md projectile ibuffer-vc expand-region company magit diff-hl counsel swiper use-package gdscript-mode markdown-mode org org-ac org-agenda-property org-autolist org-kanban org-wc yasnippet mark-multiple))))
+    (cargo flycheck-rust rust-auto-use rust-mode aggressive-indent drag-stuff multiple-cursors ace-jump-mode treemacs-magit treemacs-icons-dired treemacs-projectile treemacs-evil treemacs neotree org-evil evil-leader evil-nerd-commenter evil dashboard auto-org-md projectile ibuffer-vc expand-region company magit diff-hl counsel swiper use-package gdscript-mode markdown-mode org org-ac org-agenda-property org-autolist org-kanban org-wc yasnippet mark-multiple))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -42,13 +42,6 @@
 (setq use-package-always-ensure t)
 
 
-;; ORG -------------------------------------------------------------------
-;;;;Org mode configuration
-;; Enable Org mode
-(require 'org)
-;; Make Org mode work with files ending in .org
-;; (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
-;; The above is the default in recent emacsen
 
 ;; add your modules path
 (add-to-list 'load-path "~/.emacs.d/custom/")
@@ -59,3 +52,4 @@
 (require 'setup-convenience)
 (require 'setup-interface)
 (require 'setup-navigation)
+(require 'setup-rust)
