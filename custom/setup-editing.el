@@ -118,10 +118,22 @@
 ;; EVIL ORG
 (use-package org-evil)
 
-;;;;;;;;,,
+;;;;;;;;
 ;; Mark multiple
 (use-package multiple-cursors)
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
+;;;;;;;;;;
+;; drag-stuff
+(use-package drag-stuff)
+(add-hook 'prog-mode-hook 'drag-stuff-mode)
+(add-hook 'prog-mode-hook 'drag-stuff-define-keys)
+
+;;;;;;;;;;;;;;;
+;; Agresive indent mode
+(use-package aggressive-indent)
+(add-hook 'emacs-lisp-mode-hook #'aggressive-indent-mode)
+(add-hook 'prog-mode-hook #'aggressive-indent-mode)
