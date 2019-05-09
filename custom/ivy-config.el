@@ -9,14 +9,14 @@
 (use-package flx-isearch)
 (use-package swiper)
 (setq ivy-re-builders-alist
-     '((t      . ivy--regex-ignore-order)
-       (swiper . ivy--regex-plus)
-       (t      . ivy--regex-fuzzy)
-       ))
+      '(;;(t . ivy--regex-plus)
+	;;(t      . ivy--regex-ignore-order)
+        (t      . ivy--regex-fuzzy)
+        ))
 ;(setq ivy-re-builders-alist
 ;      '((swiper . regexp-quote)
 ;        (t      . ivy--regex-fuzzy)))
-
+(setq ivy-initial-inputs-alist nil)
 
 
 (ivy-mode 1)
