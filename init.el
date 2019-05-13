@@ -6,34 +6,6 @@
 (add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
 (package-initialize) ;; 
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ansi-color-names-vector
-   ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
- '(custom-enabled-themes (quote (tsdh-dark)))
- '(helm-ag-base-command "ag --nocolor --nogroup --ignore-case")
- '(helm-ag-command-option "--all-text")
- '(helm-ag-ignore-buffer-patterns (quote ("\\.txt\\'" "\\.mkd\\'")))
- '(helm-ag-insert-at-point (quote symbol))
- '(org-modules
-   (quote
-    (org-bbdb org-bibtex org-docview org-gnus org-info org-irc org-mhe org-rmail org-w3m org-drill)))
- '(package-selected-packages
-   (quote
-    (org-plus-contrib org-drill-table helpful which-key company-flx flx-isearch flx git-timemachine helm-ag org-bullets cargo flycheck-rust rust-auto-use rust-mode aggressive-indent drag-stuff multiple-cursors ace-jump-mode treemacs-magit treemacs-icons-dired treemacs-projectile treemacs-evil treemacs neotree org-evil evil-leader evil-nerd-commenter evil dashboard auto-org-md projectile ibuffer-vc expand-region company magit diff-hl counsel swiper use-package gdscript-mode markdown-mode org org-ac org-agenda-property org-autolist org-kanban org-wc yasnippet mark-multiple))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(company-scrollbar-bg ((t (:background "#4ccc4ccc4ccc"))))
- '(company-scrollbar-fg ((t (:background "#3fff3fff3fff"))))
- '(company-tooltip ((t (:inherit default :background "#385138513851"))))
- '(company-tooltip-common ((t (:inherit font-lock-constant-face))))
- '(company-tooltip-selection ((t (:inherit font-lock-function-name-face)))))
 
 ;; -*- mode: elisp -*-
 
@@ -70,3 +42,39 @@
 
 (menu-bar-mode 0)
 (tool-bar-mode -1)
+
+(unless (package-installed-p 'spacemacs-theme)
+  (package-install 'spacemacs-theme))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (spacemacs-dark)))
+ '(custom-safe-themes
+   (quote
+    ("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" default)))
+ '(helm-ag-base-command "ag --nocolor --nogroup --ignore-case")
+ '(helm-ag-command-option "--all-text")
+ '(helm-ag-ignore-buffer-patterns (quote ("\\.txt\\'" "\\.mkd\\'")))
+ '(helm-ag-insert-at-point (quote symbol))
+ '(package-selected-packages
+   (quote
+    (spacemacs-dark yasnippet which-key volatile-highlights use-package treemacs-projectile treemacs-magit treemacs-icons-dired treemacs-evil spacemacs-theme rust-auto-use org-plus-contrib org-evil org-drill-table org-bullets neotree multiple-cursors lsp-ui ibuffer-vc helpful helm-lsp helm-ag git-timemachine flycheck-tip flycheck-rust flx-isearch expand-region evil-nerd-commenter evil-leader duplicate-thing drag-stuff diff-hl dashboard counsel company-lsp company-flx cargo auto-org-md aggressive-indent ace-jump-mode))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(company-scrollbar-bg ((t (:background "#ffffffffffff"))))
+ '(company-scrollbar-fg ((t (:background "#ffffffffffff"))))
+ '(company-tooltip ((t (:inherit default :background "#ffffffffffff"))))
+ '(company-tooltip-common ((t (:inherit font-lock-constant-face))))
+ '(company-tooltip-selection ((t (:inherit font-lock-function-name-face)))))
+
+(set-face-attribute 'default nil
+                    :family "Source Code Pro"
+                   :height 110
+                    :weight 'normal
+                    :width 'normal)
+
