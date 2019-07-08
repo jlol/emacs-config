@@ -134,6 +134,6 @@
 
 ;;;;;;;;;;;;;;;
 ;; Agresive indent mode
-(use-package aggressive-indent)
-(add-hook 'emacs-lisp-mode-hook #'aggressive-indent-mode)
-(add-hook 'prog-mode-hook #'aggressive-indent-mode)
+;;(use-package aggressive-indent)
+;;(add-hook 'emacs-lisp-mode-hook #'aggressive-indent-mode)
+;;(add-hook 'prog-mode-hook #'aggressive-indent-mode)
