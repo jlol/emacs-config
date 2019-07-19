@@ -33,6 +33,8 @@
     ;(electric-pair-local-mode 1) ;; Emacs 25
 
     (local-set-key (kbd "C-c r r") 'omnisharp-run-code-action-refactoring)
-    (local-set-key (kbd "C-c C-c") 'recompile))
+    (local-set-key (kbd "C-c C-c") 'recompile)    
+    (global-set-key [(control ?\.)] 'company-omnisharp)
+)
 
 (add-hook 'csharp-mode-hook 'my-csharp-mode-setup t)
