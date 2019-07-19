@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: refs
+# key: refs
+# --
+[Serializable]
+public struct References
+{
+}
+public References refs;
