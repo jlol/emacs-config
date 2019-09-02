@@ -35,6 +35,8 @@
     (local-set-key (kbd "C-c r r") 'omnisharp-run-code-action-refactoring)
     (local-set-key (kbd "C-c C-c") 'recompile)    
     (global-set-key [(control ?\.)] 'company-omnisharp)
+    (global-set-key [ f12 ] 'omnisharp-go-to-definition)
+    (global-set-key [(control f12)] 'omnisharp-find-usages-with-ido)
 )
 
 (add-hook 'csharp-mode-hook 'my-csharp-mode-setup t)

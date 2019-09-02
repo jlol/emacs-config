@@ -92,6 +92,8 @@
 (use-package evil)
 (evil-mode 1)
 
+
+(setq evil-want-fine-undo t)
 ;; EVIL NERD COMMENTER
 (use-package evil-nerd-commenter)
 ;; Emacs key bindings
