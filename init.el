@@ -78,8 +78,8 @@
  '(company-tooltip-selection ((t (:inherit font-lock-function-name-face)))))
 
 (set-face-attribute 'default nil
-                    :family "Source Code Pro-27"
-                    :height 150
+                    :family "Source Code Pro"
+                    :height 140
                     :weight 'normal
                     :width 'normal)
 
