@@ -37,6 +37,8 @@
     (global-set-key [(control ?\.)] 'company-omnisharp)
     (global-set-key [ f12 ] 'omnisharp-go-to-definition)
     (global-set-key [(control f12)] 'omnisharp-find-usages-with-ido)
+    (global-set-key [(control f2)] 'omnisharp-rename)
+    (local-set-key (kbd "C-c f") 'omnisharp-navigate-to-solution-member)
 )
 
 (add-hook 'csharp-mode-hook 'my-csharp-mode-setup t)
