@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: complex_event
+# key: cevt
+# --
+EventManager.Connect<${1:type}>(${2:callback});
+EventManager.Disconnect<$1>($2);
