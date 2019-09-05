@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: enable
+# key: enable
+# --
+void OnEnable()
+{
+
+}
+
+void OnDisable()
+{
+
+}

@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: trigger2d
+# key: trigger2d
+# --
+void OnTriggerEnter2D(Collider2D collider)
+{
+
+}
+
+void OnTriggerExit2D(Collider2D collider)
+{
+
+}
+
