@@ -62,3 +62,8 @@ history
 
 snippets/csharp-mode/lightneer
 snippets/csharp-mode/event
+
+# JAVA
+.dap-breakpoints
+eclipse.jdt.ls/
+workspace/

@@ -7,3 +7,19 @@
  '(helm-ag-command-option "--all-text")
  '(helm-ag-insert-at-point 'symbol)
  '(helm-ag-ignore-buffer-patterns '("\\.txt\\'" "\\.mkd\\'")))
+
+
+(if (string= system-type "windows-nt")
+    (progn
+	; store all backup and autosave files in the tmp dir
+;;	(setq backup-directory-alist (quote ((".*" . "c:/emacs_tmp"))))
+;;	(setq auto-save-file-name-transforms  `((".*" , "c:/emacs_tmp" t))))
+ 
+    (defconst emacs-tmp-dir (expand-file-name (format "emacs%d" (user-uid)) "c:/emacs_tmp/"))
+    (setq backup-directory-alist `((".*" . ,emacs-tmp-dir)))
+    (setq auto-save-file-name-transforms `((".*" ,emacs-tmp-dir t)))
+    (setq auto-save-list-file-prefix emacs-tmp-dir)   
+))
+
+;; Scroll only one line at a time
+(setq scroll-step 1)
