@@ -3,4 +3,4 @@
 # key: sevt
 # --
 EventManager.Connect(SimpleEvent.${1:evt}, ${2:callback});
-EventManager.Disonnect(SimpleEvent.$1, $2);
+EventManager.Disconnect(SimpleEvent.$1, $2);
