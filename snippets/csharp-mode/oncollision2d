@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: oncollision2d
+# key: collision2d
+# --
+void OnCollisionEnter2D(Collision2D col)
+{
+
+}
+void OnCollisionStay2D(Collision2D col) {}
+void OnCollisionExit2D(Collision2D col) {}

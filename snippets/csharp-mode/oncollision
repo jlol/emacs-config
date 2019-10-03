@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: oncollision
+# key: collision
+# --
+void OnCollisionEnter(Collision col)
+{
+
+}
+void OnCollisionExit(Collision col) {}
+void OnCollisionStay(Collision col) {}
