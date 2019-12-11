@@ -117,6 +117,8 @@
   "\\" 'evilnc-comment-operator ; if you prefer backslash key
 )
 
+    (defvar evil-replace-state-cursor)
+ (setq evil-replace-state-cursor '("red" bar))
 ;; EVIL ORG
 (use-package org-evil)
 
