@@ -86,4 +86,4 @@
 (projectile-global-mode)
 
 ;; Find file in project
-(global-set-key (kbd "C-x p") 'projectile-find-file))
+(global-set-key (kbd "C-x p") 'projectile-find-file)
