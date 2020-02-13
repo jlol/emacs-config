@@ -2,7 +2,7 @@
 
 
 
-;(defun my-java-mode-setup ()
+(defun my-java-mode-setup ()
   (require 'cc-mode)
 
   (use-package projectile :ensure t)
@@ -24,7 +24,7 @@
   (require 'dap-java)
 
   
-;)
+)
 
-;;(add-hook 'java-mode-hook 'my-java-mode-setup t)
+(add-hook 'java-mode-hook 'my-java-mode-setup t)
 

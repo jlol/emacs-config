@@ -1,6 +1,5 @@
 (provide 'setup-csharp)
 
-(use-package omnisharp)
 
 ;; Start omnisharp on csharp files
 ;;(add-hook 'csharp-mode-hook 'omnisharp-mode)
@@ -16,6 +15,8 @@
 ;;(add-hook 'csharp-mode-hook #'flycheck-mode)
 
 (defun my-csharp-mode-setup ()
+    
+    (use-package omnisharp)
     (omnisharp-mode)
 
     (eval-after-load

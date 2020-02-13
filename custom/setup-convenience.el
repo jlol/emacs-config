@@ -1,9 +1,19 @@
 (provide 'setup-convenience)
 
+
+;; make PC keyboard's Win key or other to type Super or Hyper, for emacs running on Windows.
+(when (eq window-system 'w32)
+    (setq w32-apps-modifier 'super))
+;;(setq w32-pass-lwindow-to-system nil)
+;;(setq w32-lwindow-modifier 'super) ; Left Windows key
+
 ;; GROUP: Convenience -> Revert
 
 ;; update any change made on file to the current buffer
 (global-auto-revert-mode)
+
+;; Save desktop layout and open files
+(desktop-save-mode 1)
 
 ;; GROUP: Convenience -> Hippe Expand
 ;; hippie-expand is a better version of dabbrev-expand.
