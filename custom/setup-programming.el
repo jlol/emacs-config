@@ -92,6 +92,14 @@
 (global-set-key (kbd "C-x g r") 'magit-reflog)
 (global-set-key (kbd "C-x g t") 'magit-tag)
 
+;;; C-f in the magit status buffer invokes the magit-gitflow popup. If you
+;;; would like to use a different key, set the magit-gitflow-popup-key variable
+;;; before loading magit-gitflow
+;; (setq magit-gitflow-popup-key "C-n")
+
+;;(use-package 'magit-gitflow)
+;;(add-hook 'magit-mode-hook 'turn-on-magit-gitflow)
+
 ;;;;;;;;;;;;;;;;;
 ;; GIT TIMEMACHINE
 (use-package git-timemachine)

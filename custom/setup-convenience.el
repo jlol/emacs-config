@@ -13,8 +13,9 @@
 (global-auto-revert-mode)
 
 ;; Save desktop layout and open files
-(desktop-save-mode 1)
-
+(desktop-save-mode)
+;; Add variables to desktop saving
+(add-to-list 'desktop-globals-to-save 'register-alist)
 ;; GROUP: Convenience -> Hippe Expand
 ;; hippie-expand is a better version of dabbrev-expand.
 ;; While dabbrev-expand searches for words you already types, in current;; buffers and other buffers, hippie-expand includes more sources,
