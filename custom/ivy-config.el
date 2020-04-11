@@ -23,6 +23,9 @@
 (setq ivy-use-virtual-buffers t)
 (setq ivy-count-format "(%d/%d) ")
 (setq enable-recursive-minibuffers t)
+(setq ivy-use-selectable-prompt t)
+(define-key ivy-minibuffer-map (kbd "TAB") 'ivy-partial)
+
 ;; enable this if you want `swiper' to use it
 ;; (setq search-default-mode #'char-fold-to-regexp)
 (global-set-key "\C-s" 'swiper)
