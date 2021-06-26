@@ -67,7 +67,8 @@
  '(helm-ag-ignore-buffer-patterns '("\\.txt\\'" "\\.mkd\\'"))
  '(helm-ag-insert-at-point 'symbol)
  '(package-selected-packages
-   '(php-mode jedi eglot company-lsp dap-mode helm-lsp lsp-mode lsp-treemacs lsp-ui json-navigator json-mode json-reformat dap-java lsp-java eclim column-enforce-mode objc-font-lock omnisharp spacemacs-dark yasnippet which-key volatile-highlights use-package treemacs-projectile treemacs-magit treemacs-icons-dired treemacs-evil spacemacs-theme rust-auto-use org-plus-contrib org-evil org-drill-table org-bullets neotree multiple-cursors ibuffer-vc helpful helm-ag git-timemachine flycheck-tip flycheck-rust flx-isearch expand-region evil-nerd-commenter evil-leader duplicate-thing drag-stuff diff-hl dashboard counsel company-flx cargo auto-org-md ace-jump-mode)))
+   (quote
+    (php-mode jedi js-auto-format-mode js-format js2-mode shader-mode magit-gitflow magit-lfs json-navigator json-mode json-reformat dap-java dap-mode lsp-java eclim column-enforce-mode objc-font-lock omnisharp spacemacs-dark yasnippet which-key volatile-highlights use-package treemacs-projectile treemacs-magit treemacs-icons-dired treemacs-evil spacemacs-theme rust-auto-use org-plus-contrib org-evil org-drill-table org-bullets neotree multiple-cursors lsp-ui ibuffer-vc helpful helm-lsp helm-ag git-timemachine flycheck-tip flycheck-rust flx-isearch expand-region evil-nerd-commenter evil-leader duplicate-thing drag-stuff diff-hl dashboard counsel company-lsp company-flx cargo auto-org-md ace-jump-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
