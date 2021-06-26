@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: scriptable
+# key: scriptable
+# --
+using UnityEngine;
+
+namespace ${1:namespace}
+{
+    [CreateAssetMenu(fileName = "${2:filename}", menuName = "${3:menuoption}")]
+    public class ${4:classname} : ScriptableObject
+    {   
+    }
+}

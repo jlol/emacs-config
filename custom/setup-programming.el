@@ -75,6 +75,7 @@
 (use-package magit)
 (set-default 'magit-stage-all-confirm nil)
 (add-hook 'magit-mode-hook 'magit-load-config-extensions)
+(add-hook 'magit-mode-hook 'turn-on-magit-gitflow)
 
 ;; full screen magit-status
 (defadvice magit-status (around magit-fullscreen activate)
