@@ -135,9 +135,15 @@
 (use-package drag-stuff)
 (add-hook 'prog-mode-hook 'drag-stuff-mode)
 (add-hook 'prog-mode-hook 'drag-stuff-define-keys)
+(drag-stuff-global-mode 1)
+(add-to-list 'drag-stuff-except-modes 'org-mode)
 
 ;;;;;;;;;;;;;;;
 ;; Agresive indent mode
 ;;(use-package aggressive-indent)
 ;;(add-hook 'emacs-lisp-mode-hook #'aggressive-indent-mode)
 ;;(add-hook 'prog-mode-hook #'aggressive-indent-mode)
+
+
+;; Disable electric-indent-mode for json
+(add-hook 'json-mode-hook (lambda () (electric-indent-local-mode -1)))

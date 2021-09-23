@@ -11,6 +11,7 @@
 (setq ivy-re-builders-alist
       '(;;(t . ivy--regex-plus)
 	;;(t      . ivy--regex-ignore-order)
+        (swiper . regexp-quote)
         (t      . ivy--regex-fuzzy)
         ))
 ;(setq ivy-re-builders-alist
