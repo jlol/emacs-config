@@ -92,6 +92,7 @@
 (use-package evil)
 (evil-mode 1)
 
+(evil-set-undo-system 'undo-tree)
 
 (setq evil-want-fine-undo t)
 ;; EVIL NERD COMMENTER

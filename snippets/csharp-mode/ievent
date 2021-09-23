@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: ievent 
+# key: ievent
+# --
+namespace Lightneer.Framework
+{
+    public struct $0 : IEvent 
+    {
+
+    }
+}

@@ -8,17 +8,19 @@
 (use-package flx)
 (use-package flx-isearch)
 (use-package swiper)
-(setq ivy-re-builders-alist
-      '(;;(t . ivy--regex-plus)
-	;;(t      . ivy--regex-ignore-order)
-        (swiper . regexp-quote)
-        (t      . ivy--regex-fuzzy)
-        ))
-;(setq ivy-re-builders-alist
-;      '((swiper . regexp-quote)
-;        (t      . ivy--regex-fuzzy)))
-(setq ivy-initial-inputs-alist nil)
 
+;; No fuzzy for swiper
+;;(setq ivy-re-builders-alist
+;;      '(;;(t . ivy--regex-plus)
+;;	;;(t      . ivy--regex-ignore-order)
+;;        (swiper . regexp-quote)
+;;        (t      . ivy--regex-fuzzy)
+;;        ))
+
+(setq ivy-re-builders-alist
+      '((swiper . ivy--regex-plus)
+        (t . ivy--regex-fuzzy)))
+(setq ivy-initial-inputs-alist nil)
 
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
@@ -26,6 +28,10 @@
 (setq enable-recursive-minibuffers t)
 (setq ivy-use-selectable-prompt t)
 (define-key ivy-minibuffer-map (kbd "TAB") 'ivy-partial)
+
+;; Avoid auto-complete if trying to type a new directory
+;; that matches some existing file or directory name
+(setq ivy-magic-slash-non-match-action nil)
 
 ;; enable this if you want `swiper' to use it
 ;; (setq search-default-mode #'char-fold-to-regexp)

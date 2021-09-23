@@ -12,9 +12,21 @@
 
 (use-package helm-lsp)
 
-(add-hook 'rust-mode-hook #'lsp)
 
 ;;(define-key lsp-ui-mode-map [remap xref-find-definitions] #'lsp-ui-peek-find-definitions)
 ;;(define-key lsp-ui-mode-map [remap xref-find-references] #'lsp-ui-peek-find-references)
 
-(global-set-key [ f12 ] 'lsp-find-definition)
+;;(global-set-key [ f12 ] 'lsp-find-definition)
+
+(local-set-key (kbd "C-c t l") 'lsp-lens-mode)
+(local-set-key [ f7 ] 'lsp-ui-peek-find-references)
+(local-set-key [ f8 ] 'lsp-find-references)
+(local-set-key [ f9 ] 'lsp-find-definition)
+(local-set-key [ f12 ] 'xref-find-definitions-other-window)
+
+(local-set-key [(control f2)] 'lsp-rename)
+
+(local-set-key (kbd "C-c c r") 'helm-lsp-code-actions)
+(local-set-key (kbd "C-c f") 'helm-lsp-workspace-symbol)
+(local-set-key (kbd "C-c F") 'helm-lsp-global-workspace-symbol)
+

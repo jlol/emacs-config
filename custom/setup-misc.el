@@ -19,7 +19,13 @@
     (setq backup-directory-alist `((".*" . ,emacs-tmp-dir)))
     (setq auto-save-file-name-transforms `((".*" ,emacs-tmp-dir t)))
     (setq auto-save-list-file-prefix emacs-tmp-dir)   
-))
+    )
+    (progn (setq backup-directory-alist
+          `((".*" . ,temporary-file-directory)))
+    (setq auto-save-file-name-transforms
+          `((".*" ,temporary-file-directory t)))
+    )
+)
 
 ;; Scroll only one line at a time
 (setq scroll-step 1)
