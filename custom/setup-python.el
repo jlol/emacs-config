@@ -34,8 +34,12 @@
 ;;	(add-hook 'python-mode-hook 'anaconda-mode)
 ;;	(local-set-key [ f12 ] 'xref-find-definitions-other-window)
 ;; END ANACONDA
-	(local-set-key [(control f2)] 'query-replace)
+	(local-set-key [(control f2)] 'lsp-rename)
         (local-set-key [(control ?\.)] 'complete-symbol)
+
+	;; Line length ruler
+	(setq-default fill-column 79)
+	(display-fill-column-indicator-mode)
 )
 
 (add-hook 'python-mode-hook 'my-python-mode-setup t)
