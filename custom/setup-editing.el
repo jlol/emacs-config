@@ -117,6 +117,13 @@
   "."  'evilnc-copy-and-comment-operator
   "\\" 'evilnc-comment-operator ; if you prefer backslash key
 )
+(evil-global-set-key 'normal "·" 'evil-first-non-blank)
+
+;;Exit insert mode by pressing j and then j quickly
+(use-package key-chord)
+;;(setq key-chord-two-keys-delay 0.5)
+(key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
+(key-chord-mode 1)
 
     (defvar evil-replace-state-cursor)
  (setq evil-replace-state-cursor '("red" bar))

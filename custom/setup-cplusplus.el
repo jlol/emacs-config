@@ -26,15 +26,18 @@
 
     (global-set-key [(control ?\.)] 'company-complete-common)
     (global-set-key [(control f12)] 'lsp-find-definition)
+    (global-set-key [(control f3)] 'xref-find-apropos)
     (global-set-key [ f12 ] 'lsp-find-declaration)
     (global-set-key [ f9 ] 'flycheck-next-error)
     (global-set-key [(control f7)] 'lsp-find-references)
+    (global-set-key [ f7 ] 'xref-find-references)
     (global-set-key [(control f2)] 'lsp-rename)
     (global-set-key (kbd "<M-return>") 'lsp-execute-code-action)
     (global-set-key [(control f11)] 'next-error)
     (global-set-key (kbd "C-c i") 'c-indent-line-or-region)
     (global-set-key (kbd "C-c c") 'comment-or-uncomment-region)
     (global-set-key [(control f2)] 'lsp-rename)
+    (global-set-key [ f8 ] 'xref-find-definitions-other-window)
 )
 
 (add-hook 'c-mode-common 'my-cplusplus-mode-setup t)
