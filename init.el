@@ -76,7 +76,13 @@
  '(helm-ag-command-option "--all-text")
  '(helm-ag-ignore-buffer-patterns '("\\.txt\\'" "\\.mkd\\'"))
  '(helm-ag-insert-at-point 'symbol)
+ '(lsp-pyls-plugins-flake8-max-line-length 79)
+ '(lsp-pyls-plugins-pycodestyle-max-line-length 79)
+
+
+
  '(highlight-changes-colors '("#FD5FF0" "#AE81FF"))
+
  '(highlight-tail-colors ((("#33433c") . 0) (("#2f4148") . 20)))
  '(hl-paren-background-colors '("#2492db" "#95a5a6" nil))
  '(hl-paren-colors '("#ecf0f1" "#ecf0f1" "#c0392b"))
@@ -105,9 +111,7 @@
    '("#032f62" "#6a737d" "#d73a49" "#6a737d" "#005cc5" "#6f42c1" "#d73a49" "#6a737d"))
  '(objed-cursor-color "#ff6d7e")
  '(org-plantuml-executable-args '("-headless"))
- '(org-plantuml-jar-path "C:/Users/julucas/Downloads/plantuml/plantuml.jar")
- '(package-selected-packages
-   '(key-chord company-glsl glsl-mode lsp-treemacs soft-morning-theme flatui-theme github-modern-theme github-theme gruvbox-theme monokai-alt-theme monokai-pro-theme monokai-theme material-theme doom-themes zenburn-theme zweilight-theme ample-theme ample-zen-theme brutalist-theme ccls jenkinsfile-mode kanban org-babel-eval-in-repl yaml-mode graphviz-dot-mode plantuml-mode js-auto-format-mode js-format js2-mode shader-mode magit-gitflow magit-lfs json-navigator json-mode json-reformat dap-java dap-mode lsp-java eclim column-enforce-mode objc-font-lock omnisharp spacemacs-dark yasnippet which-key volatile-highlights use-package treemacs-projectile treemacs-magit treemacs-icons-dired treemacs-evil spacemacs-theme rust-auto-use org-plus-contrib org-evil org-drill-table org-bullets neotree multiple-cursors lsp-ui ibuffer-vc helpful helm-lsp helm-ag git-timemachine flycheck-tip flycheck-rust flx-isearch expand-region evil-nerd-commenter evil-leader duplicate-thing drag-stuff diff-hl dashboard counsel company-lsp company-flx cargo auto-org-md ace-jump-mode))
+;; '(org-plantuml-jar-path "C:/Users/julucas/Downloads/plantuml/plantuml.jar")
  '(pdf-view-midnight-colors (cons "#f2fffc" "#273136"))
  '(plantuml-default-exec-mode 'jar t)
  '(plantuml-executable-args '("-headless"))
@@ -145,10 +149,10 @@
  '(vc-annotate-very-old-color nil)
  '(weechat-color-list
    '(unspecified "#272822" "#3C3D37" "#F70057" "#F92672" "#86C30D" "#A6E22E" "#BEB244" "#E6DB74" "#40CAE4" "#66D9EF" "#FB35EA" "#FD5FF0" "#74DBCD" "#A1EFE4" "#F8F8F2" "#F8F8F0")))
-;; >>> conflicts
-;; '(package-selected-packages
-;;   (quote
-;;    (php-mode jedi js-auto-format-mode js-format js2-mode shader-mode magit-gitflow magit-lfs json-navigator json-mode json-reformat dap-java dap-mode lsp-java eclim column-enforce-mode objc-font-lock omnisharp spacemacs-dark yasnippet which-key volatile-highlights use-package treemacs-projectile treemacs-magit treemacs-icons-dired treemacs-evil spacemacs-theme rust-auto-use org-plus-contrib org-evil org-drill-table org-bullets neotree multiple-cursors lsp-ui ibuffer-vc helpful helm-lsp helm-ag git-timemachine flycheck-tip flycheck-rust flx-isearch expand-region evil-nerd-commenter evil-leader duplicate-thing drag-stuff diff-hl dashboard counsel company-lsp company-flx cargo auto-org-md ace-jump-mode))))
+
+'(package-selected-packages
+  '(key-chord company-glsl glsl-mode lsp-treemacs soft-morning-theme flatui-theme github-modern-theme github-theme gruvbox-theme monokai-alt-theme monokai-pro-theme monokai-theme material-theme doom-themes zenburn-theme zweilight-theme ample-theme ample-zen-theme brutalist-theme ccls jenkinsfile-mode kanban org-babel-eval-in-repl yaml-mode graphviz-dot-mode plantuml-mode js-auto-format-mode js-format js2-mode shader-mode magit-gitflow magit-lfs json-navigator json-mode json-reformat dap-java dap-mode lsp-java eclim column-enforce-mode objc-font-lock omnisharp spacemacs-dark yasnippet which-key volatile-highlights use-package treemacs-projectile treemacs-magit treemacs-icons-dired treemacs-evil spacemacs-theme rust-auto-use org-plus-contrib org-evil org-drill-table org-bullets neotree multiple-cursors lsp-ui ibuffer-vc helpful helm-lsp helm-ag git-timemachine flycheck-tip flycheck-rust flx-isearch expand-region evil-nerd-commenter evil-leader duplicate-thing drag-stuff diff-hl dashboard counsel company-lsp company-flx cargo auto-org-md ace-jump-mode))  
+
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
