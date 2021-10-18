@@ -108,7 +108,7 @@
  '(objed-cursor-color "#ff6d7e")
  '(org-plantuml-executable-args '("-headless"))
  '(package-selected-packages
-   '(company-glsl key-chord yasnippet which-key volatile-highlights use-package undo-tree treemacs-projectile treemacs-magit treemacs-icons-dired treemacs-evil spacemacs-theme rust-mode rust-auto-use php-mode pandoc page-break-lines ox-pandoc org-plus-contrib org-evil org-drill-table org-bullets omnisharp neotree multiple-cursors monitor lsp-ui jedi ibuffer-vc helpful helm-lsp helm-ag git-timemachine flycheck-tip flycheck-rust flx-isearch expand-region evil-nerd-commenter evil-leader eglot duplicate-thing drag-stuff diff-hl dashboard dash-functional dap-mode counsel company-lsp company-flx column-enforce-mode cargo auto-org-md ace-jump-mode))
+   '(zweilight-theme zenburn-theme yasnippet yaml-mode which-key volatile-highlights use-package undo-tree treemacs-projectile treemacs-magit treemacs-icons-dired treemacs-evil spacemacs-theme soft-morning-theme shader-mode plantuml-mode page-break-lines org-plus-contrib org-evil org-bullets org-babel-eval-in-repl multiple-cursors monokai-theme monokai-pro-theme monokai-alt-theme monitor material-theme lsp-ui lsp-treemacs key-chord kanban jenkinsfile-mode ibuffer-vc helpful helm-lsp helm-ag gruvbox-theme graphviz-dot-mode github-theme github-modern-theme git-timemachine flycheck-tip flx-isearch flatui-theme expand-region evil-nerd-commenter evil-leader duplicate-thing drag-stuff doom-themes diff-hl dashboard counsel company-glsl company-flx column-enforce-mode ccls ample-zen-theme ample-theme ace-jump-mode))
  '(pdf-view-midnight-colors (cons "#f2fffc" "#273136"))
  '(plantuml-default-exec-mode 'jar t)
  '(plantuml-executable-args '("-headless"))
