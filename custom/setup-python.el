@@ -2,11 +2,21 @@
 (defun my-python-mode-setup ()
 ;; LSP_MODE
     (require 'setup-lsp)
+
+(use-package lsp-pyright
+  :ensure t
+  :hook (python-mode . (lambda ()
+                          (require 'lsp-pyright)
+                          (lsp))))  ; or lsp-deferred
+
+
 ;;    (use-package lsp-mode
 ;;		 :hook ((python-mode . lsp))
 ;;		 :commands lsp)
-    (lsp)
-    (lsp-register-custom-settings '(("pyls.plugins.pyls_black.enabled" t t))) 
+
+;; Uncomment to use LSP
+;;    (lsp)
+;;    (lsp-register-custom-settings '(("pyls.plugins.pyls_black.enabled" t t))) 
 ;; END LSP_MODE
 
 ;; ELPY
@@ -34,6 +44,7 @@
 ;;	(add-hook 'python-mode-hook 'anaconda-mode)
 ;;	(local-set-key [ f12 ] 'xref-find-definitions-other-window)
 ;; END ANACONDA
+
 	(local-set-key [(control f2)] 'lsp-rename)
         (local-set-key [(control ?\.)] 'complete-symbol)
 
